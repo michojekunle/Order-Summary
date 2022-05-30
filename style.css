@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+}
+
+body {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: hsl(230, 69%, 90%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 70vh;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 20px;
+}
+
+.image>img {
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    height: 25vh;
+}
+
+.main-contents {
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vh;
+    height: 55vh;
+}
+
+.main>h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(223, 47%, 23%);
+    padding: 2vh 0;
+}
+
+p {
+    color:hsl(224, 23%, 55%) ;
+    font-size: 16px;
+    line-height: 2vh;
+}
+
+.plan {
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    border-radius: 12px;
+    padding: 12px 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#plan {
+    padding-left: 20px;
+}
+
+.planp {
+    display: flex;
+}
+
+.change {
+    border: none;
+    background: none;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight:900;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ptp {
+    box-shadow: 0 12px 12px hsla(224, 23%, 55%, 0.6);
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px 60px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight:700;
+    font-size: 16px;
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 4vh;
+    letter-spacing: 2px;
+}
+
+.attribution { 
+    position: absolute;
+    font-size: 11px;
+    border: 0;
+    bottom: 12px;
+    justify-content: center;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
+    .container {
+        max-width: 400px;
+    }
+
+    .attribution {
+        text-align: center;
+        width: auto;
+        
+    }
+}
